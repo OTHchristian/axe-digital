@@ -13,7 +13,7 @@ export default function Home() {
             <div className="rounded-xl text-black p-5 xl:p-10">
               <h1 className="text-2xl text-center xl:text-5xl font-semibold">Agence de scale pour</h1>
               <h1 className="text-2xl text-center xl:text-5xl font-semibold"> les <span className="text-blue-500">e-commerces</span> et les marques</h1>
-              <p className="mt-10">De la création à l'optimisation, nous propulsons votre e-commerce avec des stratégies éprouvées qui génèrent des résultats mesurables dès les premiers mois.</p>
+              <p className="mt-10">De la création à l&apos;optimisation, nous propulsons votre e-commerce avec des stratégies éprouvées qui génèrent des résultats mesurables dès les premiers mois.</p>
               <div>
                 <div className="flex items-center gap-2.5 mt-3.5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(62.3% 0.214 259.815)" className="bi bi-check-lg" viewBox="0 0 16 16">
@@ -128,7 +128,7 @@ export default function Home() {
         <section className="w-full xl:p-5 mt-5" id="how-it-works">
           <div className="w-full text-center">
             <h1 className="text-2xl xl:text-4xl text-black font-semibold">Pourquoi votre e-commerce stagne</h1>
-            <p className="text-gray-500">la plus part des e-commercant perde de l'argent a cause de ses 4 problemes fondamentaux</p>
+            <p className="text-gray-500">la plus part des e-commercant perde de l&apos;argent a cause de ses 4 problemes fondamentaux</p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5.5 mt-10">
             <div className="border border-gray-200 rounded-xl h-100 overflow-hidden">
