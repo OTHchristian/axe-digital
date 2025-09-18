@@ -320,7 +320,7 @@ export default function Home() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(62.3% 0.214 259.815)" className="bi bi-check-lg" viewBox="0 0 16 16">
                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                   </svg>
-                  <p>Mise en place d’un chatbot Messenger/WhatsApp</p>
+                  <p>Mise en place d&apos;un chatbot Messenger/WhatsApp</p>
                 </div>
               </div>
             </div>
@@ -383,7 +383,7 @@ export default function Home() {
             <div className="text-gray-500 text-center mt-20">
               <h1 className="text-black font-semibold text-2xl">Garantie de satisfaction 100% sans risque</h1>
               <p className="mt-3.5">Nous nous engageons pour votre réussite. Si vous n'êtes pas entièrement satisfait de Notre</p>
-              <p>accompagnement, nous continuerons à travailler jusqu’à ce que vous le soyez, ou nous vous fournirons un remboursement complet.</p>
+              <p>accompagnement, nous continuerons à travailler jusqu&apos;à ce que vous le soyez, ou nous vous fournirons un remboursement complet.</p>
             </div>
           </div>
         </section>
@@ -429,7 +429,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>Avant de travailler avec Axe digital, mon site e-commerce avait du mal à générer des ventes régulières. Grâce à leur accompagnement personnalisé, j’ai enfin trouvé une stratégie claire et mes revenus ont doublé en moins de 3 mois</p>
+                <p>Avant de travailler avec Axe digital, mon site e-commerce avait du mal à générer des ventes régulières. Grâce à leur accompagnement personnalisé, j&apos;ai enfin trouvé une stratégie claire et mes revenus ont doublé en moins de 3 mois</p>
               </div>
 
             </div>
@@ -459,7 +459,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>Ce que j’ai le plus apprécié, c’est leur approche humaine. Ils ne se contentent pas de donner des conseils génériques, ils prennent vraiment le temps de comprendre nos besoins et de construire une solution adaptée. Aujourd’hui, je gère mon e-commerce avec beaucoup plus de confiance.</p>
+                <p>Ce que j&apos;ai le plus apprécié, c&apos;est leur approche humaine. Ils ne se contentent pas de donner des conseils génériques, ils prennent vraiment le temps de comprendre nos besoins et de construire une solution adaptée. Aujourd&apos;hui, je gère mon e-commerce avec beaucoup plus de confiance.</p>
               </div>
 
             </div>
@@ -489,7 +489,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>J’avais déjà essayé plusieurs formations en ligne, mais rien n’était concret. Avec axe digital, j’ai eu un vrai suivi et des résultats mesurables. Mon taux de conversion a augmenté de 40% !</p>
+                <p>J&apos;avais déjà essayé plusieurs formations en ligne, mais rien n&apos;était concret. Avec axe digital, j&apos;ai eu un vrai suivi et des résultats mesurables. Mon taux de conversion a augmenté de 40% !</p>
               </div>
 
             </div>
@@ -519,7 +519,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>Leur expertise dans le domaine du marketing digital m’a permis d’éviter de nombreuses erreurs coûteuses. Aujourd’hui, ma boutique en ligne est bien positionnée et attire des clients de manière constante.</p>
+                <p>Leur expertise dans le domaine du marketing digital m&apos;a permis d&apos;éviter de nombreuses erreurs coûteuses. Aujourd&apos;hui, ma boutique en ligne est bien positionnée et attire des clients de manière constante.</p>
               </div>
 
             </div>
@@ -549,7 +549,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>Ce que j’ai aimé, c’est leur disponibilité et leur réactivité. À chaque fois que j’avais une difficulté technique ou stratégique, ils étaient là pour me guider. C’est plus qu’un accompagnement, c’est un vrai partenariat.</p>
+                <p>Ce que j&apos;ai aimé, c&apos;est leur disponibilité et leur réactivité. À chaque fois que j&apos;avais une difficulté technique ou stratégique, ils étaient là pour me guider. C&apos;est plus qu&apos;un accompagnement, c&apos;est un vrai partenariat.</p>
               </div>
 
             </div>
@@ -579,7 +579,7 @@ export default function Home() {
                 <p className="ml-3.5 text-gray-300">5/5</p>
               </div>
               <div className="text-black">
-                <p>Je recommande vivement axe digial à tous ceux qui veulent se lancer dans l’e-commerce. Leur accompagnement pas à pas m’a permis de passer de l’idée à une boutique rentable, sans me sentir perdu.</p>
+                <p>Je recommande vivement axe digial à tous ceux qui veulent se lancer dans l&apos;e-commerce. Leur accompagnement pas à pas m&apos;a permis de passer de l&apos;idée à une boutique rentable, sans me sentir perdu.</p>
               </div>
 
             </div>
@@ -612,29 +612,29 @@ export default function Home() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>En quoi consiste votre accompagnement pour e-commerçants ?</AccordionTrigger>
                   <AccordionContent>
-                    Nous proposons un suivi personnalisé allant de la création de la boutique en ligne à l’optimisation des ventes (marketing, gestion des stocks, automatisation, publicité, etc.).
+                    Nous proposons un suivi personnalisé allant de la création de la boutique en ligne à l&apos;optimisation des ventes (marketing, gestion des stocks, automatisation, publicité, etc.).
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>À qui s’adresse votre service ?</AccordionTrigger>
+                  <AccordionTrigger>À qui s&apos;adresse votre service ?</AccordionTrigger>
                   <AccordionContent>
-                    À tous ceux qui souhaitent lancer ou développer un e-commerce, que vous soyez débutant(e) ou déjà propriétaire d’une boutique en ligne.
+                    À tous ceux qui souhaitent lancer ou développer un e-commerce, que vous soyez débutant(e) ou déjà propriétaire d&apos;une boutique en ligne.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Dois-je déjà avoir un site e-commerce pour travailler avec vous ?</AccordionTrigger>
                   <AccordionContent>
-                    Pas forcément ! Nous vous aidons aussi bien à créer votre première boutique qu’à améliorer un site déjà existant.
+                    Pas forcément ! Nous vous aidons aussi bien à créer votre première boutique qu&apos;à améliorer un site déjà existant.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger>Quels résultats puis-je attendre ?</AccordionTrigger>
                   <AccordionContent>
-                    Chaque projet est unique, mais la plupart de nos clients constatent une nette amélioration de leurs ventes et de leur visibilité dès les premiers mois d’accompagnement.
+                    Chaque projet est unique, mais la plupart de nos clients constatent une nette amélioration de leurs ventes et de leur visibilité dès les premiers mois d&apos;accompagnement.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Combien de temps dure l’accompagnement ?</AccordionTrigger>
+                  <AccordionTrigger>Combien de temps dure l&apos;accompagnement ?</AccordionTrigger>
                   <AccordionContent>
                     Nous proposons des formules flexibles : du suivi ponctuel (quelques semaines) à des programmes complets sur plusieurs mois, selon vos besoins et vos objectifs.
                   </AccordionContent>
@@ -642,7 +642,7 @@ export default function Home() {
                 <AccordionItem value="item-6">
                   <AccordionTrigger>Quels sont vos tarifs ?</AccordionTrigger>
                   <AccordionContent>
-                    Nos tarifs varient selon le type d’accompagnement choisi. Nous proposons des offres adaptées à chaque budget, du lancement de projet aux stratégies avancées pour booster les ventes.
+                    Nos tarifs varient selon le type d&apos;accompagnement choisi. Nous proposons des offres adaptées à chaque budget, du lancement de projet aux stratégies avancées pour booster les ventes.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
