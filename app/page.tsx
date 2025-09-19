@@ -11,8 +11,8 @@ export default function Home() {
         <section className="w-full xl:p-5 mt-5" id="accueil">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
-              <h1 className="text-2xl text-center xl:text-5xl font-semibold">Agence de scale pour</h1>
-              <h1 className="text-2xl text-center xl:text-5xl font-semibold"> les <span className="text-blue-500">e-commerces</span> et les marques</h1>
+              <h1 className="text-3xl text-center md:text-5xl font-semibold">Agence de scale pour</h1>
+              <h1 className="text-3xl text-center md:text-5xl font-semibold"> les <span className="text-blue-500">e-commerces</span> et les marques</h1>
               <p className="mt-10">De la création à l&apos;optimisation, nous propulsons votre e-commerce avec des stratégies éprouvées qui génèrent des résultats mesurables dès les premiers mois.</p>
               <div>
                 <div className="flex items-center gap-2.5 mt-3.5">
@@ -40,7 +40,7 @@ export default function Home() {
                   <p>Des stratégies publicitaires éprouvées</p>
                 </div>
               </div>
-              <div className="flex flex-col xl:flex-row mt-10 gap-3.5">
+              <div className="flex flex-col md:flex-row mt-10 gap-3.5 md:justify-center xl:justify-start">
                 <button className="flex border gap-2 items-center justify-center text-white p-3.5 rounded-2xl bg-blue-500 hover:bg-transparent hover:text-blue-500 border-blue-500 transition duration-500">
                   Voir nos prix 
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -55,15 +55,16 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="bg-gray-200 rounded-xl">
-              {/* <Image src={"/1.jpg"} width={500} height={500} alt="" className="w-full h-full"></Image> */}
+            <div className=" rounded-xl overflow-hidden relative">
+              <Image src={"/h2.webp"} width={500} height={0} alt="" className="w-full absolute transform rotate-45"></Image>
+              <Image src={"/h1.png"} width={500} height={0} alt="" className="w-full absolute transform rotate-45 mt-100 top-0"></Image>
             </div>
           </div>
-          <div className=" mt-3.5 xl:mt-10 grid grid-cols-3 xl:grid-cols-5 items-center justify-center">
-              <div className="hidden xl:flex h-30 w-30 rounded-full  items-center justify-center overflow-hidden">
+          <div className=" mt-3.5 xl:mt-10 grid grid-cols-3 md:grid-cols-5 items-center justify-center">
+              <div className="hidden md:flex h-30 w-30 rounded-full  items-center justify-center overflow-hidden">
                 <Image src={'/symphoni_social_logo.jpg'} alt="" width={100} height={100}></Image>
               </div>
-              <div className="hidden xl:flex h-30 w-30 rounded-full items-center justify-center overflow-hidden">
+              <div className="hidden md:flex h-30 w-30 rounded-full items-center justify-center overflow-hidden">
                 <Image src={'/zanini.jpg'} alt="" width={100} height={100}></Image>
               </div>
               <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden">
@@ -76,7 +77,7 @@ export default function Home() {
                 <Image src={'/codec.png'} alt="" width={100} height={100}></Image>
               </div>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-4 gap-2 xl:gap-5 mt-3.5 xl:mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2 xl:gap-5 mt-3.5 xl:mt-20">
             <div className=" border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
                   <h1 className="font-semibold text-5xl">+28</h1>
@@ -107,7 +108,7 @@ export default function Home() {
         <section className="w-full xl:p-5 mt-5" id="portfolio">
           <div className="text-center">
             <h1 className="text-2xl xl:text-4xl text-black font-semibold">Notre portfolio</h1>
-            <p></p>
+            <p className="text-gray-500">Découvrez nos derniers projets en identité visuelle et branding, où chaque marque e été pensée pour inspirer, se demarquer et évoluer.</p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mt-5">
             <div className="p-1 border border-gray-200 flex flex-wrap rounded-xl">
@@ -130,9 +131,9 @@ export default function Home() {
             <h1 className="text-2xl xl:text-4xl text-black font-semibold">Pourquoi votre e-commerce stagne</h1>
             <p className="text-gray-500">la plus part des e-commercant perde de l&apos;argent a cause de ses 4 problemes fondamentaux</p>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5.5 mt-10">
-            <div className="border border-gray-200 rounded-xl h-100 overflow-hidden">
-              <div className="h-2/3 bg-gray-200"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5.5 mt-10">
+            <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
+              <div className="h-65 bg-gray-200"></div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -140,13 +141,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-center mt-10">
-                <p></p>
-                <p></p>
+              <div className="text-center mt-10 p-10">
+                <p className="text-2xl font-semibold">Boutique peu credible</p>
+                <p>Votre site inspire mefiance et les visiteurs partent avant d'acheter. 70% des ventes se jouent sur la première impression.</p>
               </div>
             </div>
-            <div className="border border-gray-200 rounded-xl h-100 overflow-hidden">
-              <div className="h-2/3 bg-gray-200"></div>
+            <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
+              <div className="h-65 bg-gray-200"></div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -154,13 +155,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-center mt-10">
-                <p></p>
-                <p></p>
+              <div className="text-center mt-10 p-10">
+                <p className="text-2xl font-semibold">Publicités qui ne convertissent pas</p>
+                <p>Vos pubs attirent des curieux pas des acheteurs. Resultat: budget gaspillé et cout d'acquisition trop élevé.</p>
               </div>
             </div>
-            <div className="border border-gray-200 rounded-xl h-100 overflow-hidden">
-              <div className="h-2/3 bg-gray-200"></div>
+            <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
+              <div className="h-65 bg-gray-200"></div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -168,13 +169,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-center mt-10">
-                <p></p>
-                <p></p>
+              <div className="text-center mt-10 p-10">
+                <p className="text-2xl font-semibold">Fiches produits qui ne vendent pas</p>
+                <p>Des descriptions banales qui n'eveillent pas le desir d'achatet une visibilité Google inexistante.</p>
               </div>
             </div>
-            <div className="border border-gray-200 rounded-xl h-100 overflow-hidden">
-              <div className="h-2/3 bg-gray-200"></div>
+            <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
+              <div className="h-65 bg-gray-200"></div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -182,20 +183,53 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="text-center mt-10">
-                <p></p>
-                <p></p>
+              <div className="text-center mt-10 p-10">
+                <p className="text-2xl font-semibold">Présence digitale amateur</p>
+                <p>Vos reseaux sociaux ne reflètent pas le professionalisme de votre marque et n'engagent pas votre audience.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="w-full xl:p-10 mt-5 bg-blue-100 rounded-xl p-2.5" id="pricing">
+        <section className="w-full xl:p-5 mt-5" id="solutions">
+          <div className="w-full text-center">
+            <h1 className="text-2xl xl:text-4xl text-black font-semibold">Nos solutions qui transforment</h1>
+            <p className="text-gray-500">Chaque service est conçu pour résoudre un problème spécifique et générer des résultats mesurables</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3.5 mt-10">
+            <div className="h-100 rounded-xl border border-gray-200 p-5">
+              <div className="text-center">
+                <p className="text-2xl font-semibold">1.Création & Optimisation Shopify</p>
+                <p className="mt-5">Une boutique claire, rapide et prête à vendre.Plus de crédibilité et de conversions dès la première visite. Transformation complète de votre image de marque.</p>
+              </div>
+            </div>
+            <div className="h-100 rounded-xl border border-gray-200 p-5">
+              <div className="text-center">
+                <p className="text-2xl font-semibold">2.Création de visuels Publicitaires Performants</p>
+                <p className="mt-5">Des contenus qui captent l'attention et stoppent le scroll.CTR plus élevé → baisse du coût par clic et plus de conversions. ROI publicitaire multiplié par 2.</p>
+              </div>
+            </div>
+            <div className="h-100 rounded-xl border border-gray-200 p-5">
+              <div className="text-center">
+                <p className="text-2xl font-semibold">3.Fiches Produits Optimisées</p>
+                <p className="mt-5">Des fiches qui donnent envie d'acheter et se classent sur Google.Plus de visibilité et taux de conversion plus élevé. Vos produits deviennent irrésistibles.</p>
+              </div>
+            </div>
+            <div className="h-100 rounded-xl border border-gray-200 p-5">
+              <div className="text-center">
+                <p className="text-2xl font-semibold">4.Campagnes Publicitaires Rentables</p>
+                <p className="mt-5">Des pubs optimisées pour attirer des acheteurs, pas des curieux.Plus de ventes, moins de budget gaspillé. Chaque euro investi génère 3€ de chiffre d'affaires.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full xl:p-10 mt-5  rounded-xl p-2.5" id="pricing">
           <div className="w-full text-center">
             <h1 className="xl:text-4xl text-2xl text-black font-semibold">Nos differents packs</h1>
           </div>
-          <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 mt-10 items-center justify-center text-black">
-            <div className="h-200 bg-white rounded-xl ">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-10 items-center justify-center text-black">
+            <div className="h-200 bg-white rounded-xl border border-blue-500">
               <div className="p-10">
                 <h1 className="font-semibold text-2xl">Stater</h1>
                 <h1 className="font-semibold text-4xl mt-5">85000.FCFA </h1>
@@ -243,7 +277,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="pb-10 bg-white rounded-xl  overflow-hidden">
+            <div className="pb-10 bg-white rounded-xl  overflow-hidden border border-blue-500">
               <div className="text-center bg-blue-500 p-3.5">
                 <h1 className="text-white text-xl">Plus populaire</h1>
               </div>
@@ -374,17 +408,108 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-10">
-            <div className="border flex items-center justify-center gap-3.5 hover:text-white hover:bg-blue-500 transition duration-1000 border-blue-500 bg-white text-blue-500 p-3.5 text-center rounded-full mt-10">
-              <p>Book Call</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-              </svg>
+            <div className="flex w-full items-center justify-center">
+              <button className="w-2/3 xl:w-1/2 border flex items-center justify-center gap-3.5 hover:text-white hover:bg-blue-500 transition duration-1000 border-blue-500 bg-traparent text-blue-500 p-3.5 text-center rounded-full mt-10">
+                Book Call
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </button>
             </div>
             <div className="text-gray-500 text-center mt-20">
               <h1 className="text-black font-semibold text-2xl">Garantie de satisfaction 100% sans risque</h1>
               <p className="mt-3.5">Nous nous engageons pour votre réussite. Si vous n'êtes pas entièrement satisfait de Notre</p>
               <p>accompagnement, nous continuerons à travailler jusqu&apos;à ce que vous le soyez, ou nous vous fournirons un remboursement complet.</p>
             </div>
+          </div>
+          <hr  className="border border-gray-200 mt-10"/>
+        </section>
+
+        <section className="w-full xl:p-5 mt-5" id="why-work-with-us">
+          <div className="w-full text-center">
+            <h1 className="text-2xl xl:text-4xl text-black font-semibold">Pourquoi faire un branding professionel</h1>
+            <h1 className="text-2xl xl:text-4xl text-black font-semibold">avec Axe digital?</h1>
+          </div>
+          <div className="w-full flex items-center justify-center mt-10">
+            <div className="w-full xl:w-4/5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3.5">
+              <div className="rounded-xl bg-gradient-to-b  from-red-100 via-white to-white  p-5 border border-red-100 pb-20">
+                <h1 className="text-2xl font-semibold">Avec l'IA</h1>
+                <div className="mt-10">
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Résultats génériques et peu personnalisés.</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Pas de stratégie ni accompagnement humain.</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Aucune garantie de performance ou de suivi.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-xl bg-gradient-to-b  from-red-100 via-white to-white  p-5 border border-red-100 pb-20">
+                <h1 className="text-2xl font-semibold">Avec un freelance ou une agence classique</h1>
+                <div className="mt-10">
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Délais parfois longs et imprévisibles.</p>
+                  </div>
+                  <div className="flex  gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Coûts élevés sans forcément un vrai retour sur investissement.</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                    </svg>
+                    <p>Peu ou pas de suivi après la livraison.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-xl bg-gradient-to-b  from-blue-100 via-white to-white  p-5 border border-blue-100 pb-20">
+                <h1 className="text-2xl font-semibold">Avec notre startup</h1>
+                <div className="mt-10">
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <p>Délais parfois longs et imprévisibles.</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <p>Coûts élevés sans forcément un vrai retour sur investissement.</p>
+                  </div>
+                  <div className="flex items-start gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    <p>Peu ou pas de suivi après la livraison.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-20 flex justify-center">
+            <button className="p-3.5 gap-3.5 transition duration-1000 rounded-full flex items-center border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
+              voir nos packages
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </button>
           </div>
         </section>
 
@@ -584,6 +709,7 @@ export default function Home() {
 
             </div>
           </div>
+          
         </section>
 
         <section className="w-full xl:p-5 mt-5" id="faq">
@@ -649,7 +775,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
+        <hr  className="border border-gray-200 mt-10"/>
       </main>
       <Footer></Footer>
     </div>
