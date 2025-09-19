@@ -113,16 +113,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mt-5">
             <div className="p-1 border border-gray-200 flex flex-wrap rounded-xl">
-              <Image src={'/p1.avif'} width={1000} height={1000} className="h-full w-full" alt=""></Image>
+              <Image src={"/p1.avif"} width={1000} height={1000} className="h-full w-full" alt="p1"></Image>
             </div>
             <div className="p-1 border border-gray-200 flex flex-wrap gap-3.5 rounded-xl">
-              <Image src={'/p2.webp'} width={1000} height={1000} className="h-full w-full" alt=""></Image>
+              <Image src={"/p2.webp"} width={1000} height={1000} className="h-full w-full" alt="p2"></Image>
             </div>
             <div className="p-1 border border-gray-200 flex flex-wrap gap-3.5 rounded-xl">
-              <Image src={'/p-3.webp'} width={1000} height={1000} className="h-full w-full" alt=""></Image>
+              <Image src={"/p-3.webp"} width={1000} height={1000} className="h-full w-full" alt="p3"></Image>
             </div>
             <div className="p-1 border border-gray-200 flex flex-wrap gap-3.5 rounded-xl">
-              <Image src={'/p-4.webp'} width={1000} height={1000} className="h-full w-full" alt=""></Image>
+              <Image src={"/p-4.webp"} width={1000} height={1000} className="h-full w-full" alt="p4"></Image>
             </div>
           </div>
         </section>
@@ -144,7 +144,7 @@ export default function Home() {
               </div>
               <div className="text-center mt-10 p-10">
                 <p className="text-2xl font-semibold">Boutique peu credible</p>
-                <p>Votre site inspire mefiance et les visiteurs partent avant d'acheter. 70% des ventes se jouent sur la première impression.</p>
+                <p>Votre site inspire mefiance et les visiteurs partent avant d&apos;acheter. 70% des ventes se jouent sur la première impression.</p>
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
@@ -158,7 +158,7 @@ export default function Home() {
               </div>
               <div className="text-center mt-10 p-10">
                 <p className="text-2xl font-semibold">Publicités qui ne convertissent pas</p>
-                <p>Vos pubs attirent des curieux pas des acheteurs. Resultat: budget gaspillé et cout d'acquisition trop élevé.</p>
+                <p>Vos pubs attirent des curieux pas des acheteurs. Resultat: budget gaspillé et cout d&apos;acquisition trop élevé.</p>
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
@@ -172,7 +172,7 @@ export default function Home() {
               </div>
               <div className="text-center mt-10 p-10">
                 <p className="text-2xl font-semibold">Fiches produits qui ne vendent pas</p>
-                <p>Des descriptions banales qui n'eveillent pas le desir d'achatet une visibilité Google inexistante.</p>
+                <p>Des descriptions banales qui n&apos;eveillent pas le desir d&apos;achatet une visibilité Google inexistante.</p>
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
@@ -186,7 +186,7 @@ export default function Home() {
               </div>
               <div className="text-center mt-10 p-10">
                 <p className="text-2xl font-semibold">Présence digitale amateur</p>
-                <p>Vos reseaux sociaux ne reflètent pas le professionalisme de votre marque et n'engagent pas votre audience.</p>
+                <p>Vos reseaux sociaux ne reflètent pas le professionalisme de votre marque et n&apos;engagent pas votre audience.</p>
               </div>
             </div>
           </div>
@@ -207,19 +207,19 @@ export default function Home() {
             <div className="h-100 rounded-xl border border-gray-200 p-5">
               <div className="text-center">
                 <p className="text-2xl font-semibold">2.Création de visuels Publicitaires Performants</p>
-                <p className="mt-5">Des contenus qui captent l'attention et stoppent le scroll.CTR plus élevé → baisse du coût par clic et plus de conversions. ROI publicitaire multiplié par 2.</p>
+                <p className="mt-5">Des contenus qui captent l&apos;attention et stoppent le scroll.CTR plus élevé → baisse du coût par clic et plus de conversions. ROI publicitaire multiplié par 2.</p>
               </div>
             </div>
             <div className="h-100 rounded-xl border border-gray-200 p-5">
               <div className="text-center">
                 <p className="text-2xl font-semibold">3.Fiches Produits Optimisées</p>
-                <p className="mt-5">Des fiches qui donnent envie d'acheter et se classent sur Google.Plus de visibilité et taux de conversion plus élevé. Vos produits deviennent irrésistibles.</p>
+                <p className="mt-5">Des fiches qui donnent envie d&apos;acheter et se classent sur Google.Plus de visibilité et taux de conversion plus élevé. Vos produits deviennent irrésistibles.</p>
               </div>
             </div>
             <div className="h-100 rounded-xl border border-gray-200 p-5">
               <div className="text-center">
                 <p className="text-2xl font-semibold">4.Campagnes Publicitaires Rentables</p>
-                <p className="mt-5">Des pubs optimisées pour attirer des acheteurs, pas des curieux.Plus de ventes, moins de budget gaspillé. Chaque euro investi génère 3€ de chiffre d'affaires.</p>
+                <p className="mt-5">Des pubs optimisées pour attirer des acheteurs, pas des curieux.Plus de ventes, moins de budget gaspillé. Chaque euro investi génère 3€ de chiffre d&apos;affaires.</p>
               </div>
             </div>
           </div>
@@ -419,7 +419,7 @@ export default function Home() {
             </div>
             <div className="text-gray-500 text-center mt-20">
               <h1 className="text-black font-semibold text-2xl">Garantie de satisfaction 100% sans risque</h1>
-              <p className="mt-3.5">Nous nous engageons pour votre réussite. Si vous n'êtes pas entièrement satisfait de Notre</p>
+              <p className="mt-3.5">Nous nous engageons pour votre réussite. Si vous n&apos;êtes pas entièrement satisfait de Notre</p>
               <p>accompagnement, nous continuerons à travailler jusqu&apos;à ce que vous le soyez, ou nous vous fournirons un remboursement complet.</p>
             </div>
           </div>
@@ -434,7 +434,7 @@ export default function Home() {
           <div className="w-full flex items-center justify-center mt-10">
             <div className="w-full xl:w-4/5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3.5">
               <div className="rounded-xl bg-gradient-to-b  from-red-100 via-white to-white  p-5 border border-red-100 pb-20">
-                <h1 className="text-2xl font-semibold">Avec l'IA</h1>
+                <h1 className="text-2xl font-semibold">Avec l&apos;IA</h1>
                 <div className="mt-10">
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
@@ -518,21 +518,11 @@ export default function Home() {
           <div className="text-center text-black">
             <h1 className="text-2xl xl:text-4xl font-semibold">Testimonials</h1>
           </div>
-          {/* <div className="md:pr-20 md:pl-20">
-            <div className="grid grid-cols-1 xl:grid-cols-2 mt-3.5 border border-gray-200 rounded-xl overflow-hidden">
-              <div className="h-100">
-
-              </div>
-              <div className="flex justify-end h-100 overflow-hidden">
-                <Image src={'/richkard.png'} alt="richkart"  width={300} height={300} className="scale-130"></Image>
-              </div>
-            </div>
-          </div> */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3.5 mt-3.5">
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
                 <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-                  <Image src={'/zanini.jpg'} alt="" width={100} height={100}></Image>
+                  <Image src={"/zanini.jpg"} alt="zanini" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">Zanini</p>
               </div>
@@ -622,7 +612,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
                 <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-                  <Image src={'/skynesys_logo.jpg'} alt="" width={100} height={100}></Image>
+                  <Image src={"/skynesys_logo.jpg"} alt="skynesys" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">skynesis</p>
               </div>
@@ -652,7 +642,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
                 <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-                  <Image src={'/symphoni_social_logo.jpg'} alt="" width={100} height={100}></Image>
+                  <Image src={"/symphoni_social_logo.jpg"} alt="symphoni" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">symphoni social</p>
               </div>
@@ -720,9 +710,9 @@ export default function Home() {
               <h1 className="text-2xl xl:text-4xl font-semibold">fréquemment posées</h1>
               <div className="mt-5 border border-gray-200 p-5 rounded-xl">
                 <div className="flex w-full items-center justify-center">
-                  <Image src={'https://cdn.prod.website-files.com/66f8845b6f7911f99d856648/66f8845b6f7911f99d8566d5_Icon%20Container.svg'} width={60} height={60} alt=""></Image>
+                  <Image src={"https://cdn.prod.website-files.com/66f8845b6f7911f99d856648/66f8845b6f7911f99d8566d5_Icon%20Container.svg"} width={60} height={60} alt="help"></Image>
                 </div>
-                <p className="text-center mt-3.5">Besoin de plus d'aide</p>
+                <p className="text-center mt-3.5">Besoin de plus d&apos;aide</p>
                 <p>Si vous ne trouvez pas la réponse que vous cherchez, veuillez nous contacter en cliquant sur le bouton ci-dessous.</p>
                 <div className="flex w-full items-center justify-center">
                   <button className="flex items-center gap-2 bg-blue-900 rounded-full p-3.5 mt-3.5 text-white">
