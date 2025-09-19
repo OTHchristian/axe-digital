@@ -8,6 +8,7 @@ export default function Home() {
     <div className="bg-white p-4 xl:p-10">
       <NavBar></NavBar>
       <main className="xl:pr-10 xl:pl-10">
+        
         <section className="w-full xl:p-5 mt-5" id="accueil">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
@@ -55,26 +56,26 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className=" rounded-xl overflow-hidden relative">
-              <Image src={"/h2.webp"} width={500} height={0} alt="" className="w-full absolute transform rotate-45"></Image>
-              <Image src={"/h1.png"} width={500} height={0} alt="" className="w-full absolute transform rotate-45 mt-100 top-0"></Image>
+            <div className="rounded-xl overflow-hidden relative">
+              <Image src={"/h2.webp"} width={500} height={0} alt="h1" className="w-full absolute transform rotate-45"></Image>
+              <Image src={"/h1.png"} width={500} height={0} alt="h2" className="w-full absolute transform rotate-45 mt-100 top-0"></Image>
             </div>
           </div>
           <div className=" mt-3.5 xl:mt-10 grid grid-cols-3 md:grid-cols-5 items-center justify-center">
               <div className="hidden md:flex h-30 w-30 rounded-full  items-center justify-center overflow-hidden">
-                <Image src={'/symphoni_social_logo.jpg'} alt="" width={100} height={100}></Image>
+                <Image src={"/symphoni_social_logo.jpg"} alt="symphoni" width={100} height={100}></Image>
               </div>
               <div className="hidden md:flex h-30 w-30 rounded-full items-center justify-center overflow-hidden">
-                <Image src={'/zanini.jpg'} alt="" width={100} height={100}></Image>
+                <Image src={"/zanini.jpg"} alt="zanini" width={100} height={100}></Image>
               </div>
               <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden">
-                <Image src={'/skynesys_logo.jpg'} alt="" width={100} height={100}></Image>
+                <Image src={"/skynesys_logo.jpg"} alt="skynesys" width={100} height={100}></Image>
               </div>
               <div className="h-30 w-30 rounded-full flex items-center justify-center overflow-hidden">
-                <Image src={'/young ecolo.jpg'} alt="" width={100} height={100}></Image>
+                <Image src={"/young ecolo.jpg"} alt="young" width={100} height={100}></Image>
               </div>
               <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden">
-                <Image src={'/codec.png'} alt="" width={100} height={100}></Image>
+                <Image src={"/codec.png"} alt="codec" width={100} height={100}></Image>
               </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 xl:gap-5 mt-3.5 xl:mt-20">
