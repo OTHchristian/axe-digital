@@ -1,3 +1,4 @@
+'use client'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Footer from "@/components/ui/footer";
 import NavBar from "@/components/ui/navBar";
@@ -5,11 +6,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-white p-4 xl:p-10">
+    <div className="bg-white pr-4 pl-4 xl:pr-10 xl:pl-10">
       <NavBar></NavBar>
       <main className="xl:pr-10 xl:pl-10">
         
-        <section className="w-full xl:p-5 mt-5" id="accueil">
+        <section className="w-full xl:p-5 h-[calc(100vh-70px)] flex items-center" id="hero-section">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
               <h1 className="text-3xl text-center md:text-5xl font-semibold">Agence de scale pour</h1>
@@ -42,13 +43,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row mt-10 gap-3.5 md:justify-center xl:justify-start">
-                <button className="flex border gap-2 items-center justify-center text-white p-3.5 rounded-2xl bg-blue-500 hover:bg-transparent hover:text-blue-500 border-blue-500 transition duration-500">
+                <button className="flex border gap-2 items-center justify-center text-white p-3.5 rounded-2xl bg-blue-500 hover:bg-transparent hover:text-blue-500 border-blue-500 transition duration-500" onClick={()=>{window.location.href='#pricing'}}>
                   Voir nos prix 
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                   </svg>
                 </button>
-                <button className="flex border gap-2 items-center justify-center text-black p-3.5 rounded-2xl bg-transparent hover:bg-transparent hover:text-blue-500 border-black hover:border-blue-500 transition duration-500">
+                <button className="flex border gap-2 items-center justify-center text-black p-3.5 rounded-2xl bg-transparent hover:bg-transparent hover:text-blue-500 border-black hover:border-blue-500 transition duration-500" onClick={()=>{window.location.href='https://wa.me/237698677355'}}>
                   Planifiez un appel stratégique gratuit 
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
@@ -59,8 +60,12 @@ export default function Home() {
             <div className="rounded-xl overflow-hidden relative">
               <Image src={"/h2.webp"} width={500} height={0} alt="h1" className="w-full absolute transform rotate-45"></Image>
               <Image src={"/h1.png"} width={500} height={0} alt="h2" className="w-full absolute transform rotate-45 mt-100 top-0"></Image>
+              {/* <Image src={"/h3.png"} width={1000} height={100} alt="h3" className="w-full h-full"></Image> */}
             </div>
           </div>
+        </section>
+
+        <section id="stat-sponsor">
           <div className=" mt-3.5 xl:mt-10 grid grid-cols-3 md:grid-cols-5 items-center justify-center">
               <div className="hidden md:flex h-30 w-30 rounded-full  items-center justify-center overflow-hidden">
                 <Image src={"/symphoni_social_logo.jpg"} alt="symphoni" width={100} height={100}></Image>
@@ -134,7 +139,9 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5.5 mt-10">
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
-              <div className="h-65 bg-gray-200"></div>
+              <div className="max-h-65 bg-gray-200 overflow-hidden flex items-center justify-center">
+                <Image src={'/s2.avif'} width={1000} height={1000} alt=""></Image>
+              </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -148,7 +155,9 @@ export default function Home() {
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
-              <div className="h-65 bg-gray-200"></div>
+              <div className="max-h-65 bg-gray-200 overflow-hidden flex items-center justify-center">
+                <Image src={'/s4.webp'} width={1600} height={1600} alt=""></Image>
+              </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -162,7 +171,9 @@ export default function Home() {
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
-              <div className="h-65 bg-gray-200"></div>
+              <div className="max-h-65 bg-gray-200 overflow-hidden flex items-center justify-center">
+                <Image src={'/s1.png'} width={1600} height={1600} alt=""></Image>
+              </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -176,7 +187,9 @@ export default function Home() {
               </div>
             </div>
             <div className="border border-gray-200 rounded-xl h-fit overflow-hidden">
-              <div className="h-65 bg-gray-200"></div>
+              <div className="max-h-65 bg-gray-200 overflow-hidden flex items-center justify-center">
+                <Image src={'/s3.webp'} width={1600} height={1600} alt=""></Image>
+              </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
                   <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
@@ -410,7 +423,7 @@ export default function Home() {
           </div>
           <div className="mt-10">
             <div className="flex w-full items-center justify-center">
-              <button className="w-2/3 xl:w-1/2 border flex items-center justify-center gap-3.5 hover:text-white hover:bg-blue-500 transition duration-1000 border-blue-500 bg-traparent text-blue-500 p-3.5 text-center rounded-full mt-10">
+              <button className="w-2/3 xl:w-1/2 border flex items-center justify-center gap-3.5 hover:text-white hover:bg-blue-500 transition duration-1000 border-blue-500 bg-traparent text-blue-500 p-3.5 text-center rounded-full mt-10" onClick={()=>{window.location.href='https://wa.me/237698677355'}}>
                 Book Call
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                   <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
@@ -440,19 +453,19 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Résultats génériques et peu personnalisés.</p>
+                    <p className="w-full">Résultats génériques et peu personnalisés.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Pas de stratégie ni accompagnement humain.</p>
+                    <p className="w-full">Pas de stratégie ni accompagnement humain.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Aucune garantie de performance ou de suivi.</p>
+                    <p className="w-full">Aucune garantie de performance ou de suivi.</p>
                   </div>
                 </div>
               </div>
@@ -463,19 +476,19 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Délais parfois longs et imprévisibles.</p>
+                    <p className="w-full">Délais parfois longs et imprévisibles.</p>
                   </div>
                   <div className="flex  gap-2.5 mt-3.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Coûts élevés sans forcément un vrai retour sur investissement.</p>
+                    <p className="w-full">Coûts élevés sans forcément un vrai retour sur investissement.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p>Peu ou pas de suivi après la livraison.</p>
+                    <p className="w-full">Peu ou pas de suivi après la livraison.</p>
                   </div>
                 </div>
               </div>
@@ -483,22 +496,22 @@ export default function Home() {
                 <h1 className="text-2xl font-semibold">Avec notre startup</h1>
                 <div className="mt-10">
                   <div className="flex items-start gap-2.5 mt-3.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p>Délais parfois longs et imprévisibles.</p>
+                    <p className="w-full">Une équipe souriante et dynamique autour d’un ordinateur.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p>Coûts élevés sans forcément un vrai retour sur investissement.</p>
+                    <p className="w-full">Une fusée qui décolle (symbole de croissance et de lancement réussi).</p>
                   </div>
-                  <div className="flex items-start gap-2.5 mt-3.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <div className="flex items-start  gap-2.5 mt-3.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p>Peu ou pas de suivi après la livraison.</p>
+                    <p className="w-full">Des icônes modernes représentant accompagnement, optimisation et innovation (SEO, sécurité, graphisme).</p>
                   </div>
                 </div>
               </div>
@@ -551,8 +564,8 @@ export default function Home() {
             </div>
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
-                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-4xl text-white">S</p>
+                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <Image src={"/s-area.jpeg"} alt="zanini" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">stream Area</p>
               </div>
@@ -581,8 +594,8 @@ export default function Home() {
             </div>
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
-                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-4xl text-white">M</p>
+                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <Image src={"/mapa.jpg"} alt="zanini" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">mapa sarl</p>
               </div>
@@ -671,8 +684,8 @@ export default function Home() {
             </div>
             <div className="border border-gray-200 rounded-xl p-3.5">
               <div className="flex gap-3.5 items-center">
-                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
-                  <p className="text-4xl text-white">L</p>
+                <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <Image src={"/g-royale.jpeg"} alt="zanini" width={100} height={100}></Image>
                 </div>
                 <p className="text-black">la grande royale</p>
               </div>
@@ -715,7 +728,7 @@ export default function Home() {
                 <p className="text-center mt-3.5">Besoin de plus d&apos;aide</p>
                 <p>Si vous ne trouvez pas la réponse que vous cherchez, veuillez nous contacter en cliquant sur le bouton ci-dessous.</p>
                 <div className="flex w-full items-center justify-center">
-                  <button className="flex items-center gap-2 bg-blue-900 rounded-full p-3.5 mt-3.5 text-white">
+                  <button className="flex items-center gap-2 bg-blue-900 rounded-full p-3.5 mt-3.5 text-white" onClick={()=>{window.location.href='https://wa.me/237698677355'}}>
                     nous contacter
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
@@ -727,39 +740,39 @@ export default function Home() {
             <div>
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>En quoi consiste votre accompagnement pour e-commerçants ?</AccordionTrigger>
+                  <AccordionTrigger><p>En quoi consiste votre accompagnement pour e-commerçants ?</p></AccordionTrigger>
                   <AccordionContent>
-                    Nous proposons un suivi personnalisé allant de la création de la boutique en ligne à l&apos;optimisation des ventes (marketing, gestion des stocks, automatisation, publicité, etc.).
+                    <p>Nous proposons un suivi personnalisé allant de la création de la boutique en ligne à l&apos;optimisation des ventes (marketing, gestion des stocks, automatisation, publicité, etc.).</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>À qui s&apos;adresse votre service ?</AccordionTrigger>
+                  <AccordionTrigger><p>À qui s&apos;adresse votre service ?</p></AccordionTrigger>
                   <AccordionContent>
-                    À tous ceux qui souhaitent lancer ou développer un e-commerce, que vous soyez débutant(e) ou déjà propriétaire d&apos;une boutique en ligne.
+                    <p>À tous ceux qui souhaitent lancer ou développer un e-commerce, que vous soyez débutant(e) ou déjà propriétaire d&apos;une boutique en ligne.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Dois-je déjà avoir un site e-commerce pour travailler avec vous ?</AccordionTrigger>
+                  <AccordionTrigger><p>Dois-je déjà avoir un site e-commerce pour travailler avec vous ?</p></AccordionTrigger>
                   <AccordionContent>
-                    Pas forcément ! Nous vous aidons aussi bien à créer votre première boutique qu&apos;à améliorer un site déjà existant.
+                    <p>Pas forcément ! Nous vous aidons aussi bien à créer votre première boutique qu&apos;à améliorer un site déjà existant.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>Quels résultats puis-je attendre ?</AccordionTrigger>
+                  <AccordionTrigger><p>Quels résultats puis-je attendre ?</p></AccordionTrigger>
                   <AccordionContent>
-                    Chaque projet est unique, mais la plupart de nos clients constatent une nette amélioration de leurs ventes et de leur visibilité dès les premiers mois d&apos;accompagnement.
+                    <p>Chaque projet est unique, mais la plupart de nos clients constatent une nette amélioration de leurs ventes et de leur visibilité dès les premiers mois d&apos;accompagnement.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Combien de temps dure l&apos;accompagnement ?</AccordionTrigger>
+                  <AccordionTrigger><p>Combien de temps dure l&apos;accompagnement ?</p></AccordionTrigger>
                   <AccordionContent>
-                    Nous proposons des formules flexibles : du suivi ponctuel (quelques semaines) à des programmes complets sur plusieurs mois, selon vos besoins et vos objectifs.
+                    <p>Nous proposons des formules flexibles : du suivi ponctuel (quelques semaines) à des programmes complets sur plusieurs mois, selon vos besoins et vos objectifs.</p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
-                  <AccordionTrigger>Quels sont vos tarifs ?</AccordionTrigger>
+                  <AccordionTrigger><p>Quels sont vos tarifs ?</p></AccordionTrigger>
                   <AccordionContent>
-                    Nos tarifs varient selon le type d&apos;accompagnement choisi. Nous proposons des offres adaptées à chaque budget, du lancement de projet aux stratégies avancées pour booster les ventes.
+                    <p>Nos tarifs varient selon le type d&apos;accompagnement choisi. Nous proposons des offres adaptées à chaque budget, du lancement de projet aux stratégies avancées pour booster les ventes.</p>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
