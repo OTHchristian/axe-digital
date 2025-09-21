@@ -18,8 +18,8 @@ export default function Home() {
         <section className="w-full xl:p-5 h-[calc(100vh-70px)] flex items-center" id="hero-section">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
-              <h1 className="text-3xl text-center md:text-5xl font-semibold">Accelerateur Xponentiel </h1>
-              <h1 className="text-3xl text-center md:text-5xl font-semibold"> d&apos;<span className="text-blue-500">e-commerces</span> et des marques</h1>
+              <h1 className="text-3xl md:text-5xl font-semibold">Accelerateur Xponentiel </h1>
+              <h1 className="text-3xl md:text-5xl font-semibold"> d&apos;<span className="text-blue-500">E-commerces</span></h1>
               <p className="mt-10">De la création à l&apos;optimisation, nous propulsons votre e-commerce avec des stratégies éprouvées qui génèrent des résultats mesurables dès les premiers mois.</p>
               <div>
                 <div className="flex items-center gap-2.5 mt-3.5">
