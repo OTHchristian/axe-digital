@@ -6,7 +6,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Logo + Description */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-gray-700 pb-6 mb-6">
-          <h2 className="text-2xl font-bold text-white"><span className="text-blue-500">Axe</span> digital</h2>
+          <h2 className="text-2xl font-bold text-white flex items-center">
+            <Image src={'/logo.png'} alt="logo" width={80} height={80}></Image>
+            <span className="text-blue-500">Axe</span> digital
+          </h2>
           <p className="mt-4 md:mt-0 text-sm text-gray-400">
             Nous aidons les e-commerçants à booster leurs ventes en ligne.
           </p>

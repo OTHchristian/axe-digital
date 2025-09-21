@@ -1,15 +1,20 @@
 'use client'
+import Compteur from "@/components/ui/compteur";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Footer from "@/components/ui/footer";
 import NavBar from "@/components/ui/navBar";
+import ScrollInfini from "@/components/ui/scrollInfini";
 import Image from "next/image";
 
 export default function Home() {
+  const sponsors = [
+    '1.png','2.png','3.jpg','4.png','5.png','6.png','7.png','8.png','9.png'
+  ]
   return (
     <div className="bg-white pr-4 pl-4 xl:pr-10 xl:pl-10">
       <NavBar></NavBar>
       <main className="xl:pr-10 xl:pl-10">
-        
+             
         <section className="w-full xl:p-5 h-[calc(100vh-70px)] flex items-center" id="hero-section">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
@@ -66,45 +71,35 @@ export default function Home() {
         </section>
 
         <section id="stat-sponsor">
-          <div className=" mt-3.5 xl:mt-10 grid grid-cols-3 md:grid-cols-5 items-center justify-center">
-              <div className="hidden md:flex h-30 w-30 rounded-full  items-center justify-center overflow-hidden">
-                <Image src={"/symphoni_social_logo.jpg"} alt="symphoni" width={100} height={100}></Image>
+          <ScrollInfini speed={1}>
+            {sponsors.map((sponsor, i) => (
+              <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden" key={i}>
+                <Image src={`/partenaires/${sponsor}`} alt="skynesys" width={100} height={100}></Image>
               </div>
-              <div className="hidden md:flex h-30 w-30 rounded-full items-center justify-center overflow-hidden">
-                <Image src={"/zanini.jpg"} alt="zanini" width={100} height={100}></Image>
-              </div>
-              <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden">
-                <Image src={"/skynesys_logo.jpg"} alt="skynesys" width={100} height={100}></Image>
-              </div>
-              <div className="h-30 w-30 rounded-full flex items-center justify-center overflow-hidden">
-                <Image src={"/young ecolo.jpg"} alt="young" width={100} height={100}></Image>
-              </div>
-              <div className="h-30 w-30 rounded-full  flex items-center justify-center overflow-hidden">
-                <Image src={"/codec.png"} alt="codec" width={100} height={100}></Image>
-              </div>
-          </div>
+            ))}
+          </ScrollInfini>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 xl:gap-5 mt-3.5 xl:mt-20">
-            <div className=" border border-gray-200 rounded-xl p-10">
+            <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl">+28</h1>
+                  <h1 className="font-semibold text-5xl flex items-center justify-center">+<Compteur valeurFinale={28}></Compteur></h1>
                   <p className="text-gray-500 ">Clients actifs dans nos packs.</p>
                 </div>
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl">+180</h1>
+                  <h1 className="font-semibold text-5xl flex items-center justify-center">+<Compteur valeurFinale={180}></Compteur></h1>
                   <p className="text-gray-500">Augmentation moyenne des ventes.</p>
                 </div> 
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl">97%</h1>
+                  <h1 className="font-semibold text-5xl flex items-center justify-center"><Compteur valeurFinale={97}></Compteur>%</h1>
                   <p className="text-gray-500">Taux de satisfaction.</p>
                 </div>
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl">48Jrs</h1>
+                  <h1 className="font-semibold text-5xl flex items-center justify-center"><Compteur valeurFinale={48}></Compteur>Jrs</h1>
                   <p className="text-gray-500">Durée de livraison moyenne.</p>
                 </div>
             </div>
@@ -114,7 +109,7 @@ export default function Home() {
         <section className="w-full xl:p-5 mt-5" id="portfolio">
           <div className="text-center">
             <h1 className="text-2xl xl:text-4xl text-black font-semibold">Notre portfolio</h1>
-            <p className="text-gray-500">Découvrez nos derniers projets en identité visuelle et branding, où chaque marque e été pensée pour inspirer, se demarquer et évoluer.</p>
+            <p className="text-gray-500">Découvrez nos derniers projets en identité visuelle et branding, où chaque marque a été pensée pour inspirer, se demarquer et évoluer.</p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mt-5">
             <div className="p-1 border border-gray-200 flex flex-wrap rounded-xl">
@@ -211,25 +206,25 @@ export default function Home() {
             <p className="text-gray-500">Chaque service est conçu pour résoudre un problème spécifique et générer des résultats mesurables</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3.5 mt-10">
-            <div className="h-100 rounded-xl border border-gray-200 p-5">
+            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
               <div className="text-center">
                 <p className="text-2xl font-semibold">1.Création & Optimisation Shopify</p>
                 <p className="mt-5">Une boutique claire, rapide et prête à vendre.Plus de crédibilité et de conversions dès la première visite. Transformation complète de votre image de marque.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5">
+            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
               <div className="text-center">
                 <p className="text-2xl font-semibold">2.Création de visuels Publicitaires Performants</p>
                 <p className="mt-5">Des contenus qui captent l&apos;attention et stoppent le scroll.CTR plus élevé → baisse du coût par clic et plus de conversions. ROI publicitaire multiplié par 2.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5">
+            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
               <div className="text-center">
                 <p className="text-2xl font-semibold">3.Fiches Produits Optimisées</p>
                 <p className="mt-5">Des fiches qui donnent envie d&apos;acheter et se classent sur Google.Plus de visibilité et taux de conversion plus élevé. Vos produits deviennent irrésistibles.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5">
+            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
               <div className="text-center">
                 <p className="text-2xl font-semibold">4.Campagnes Publicitaires Rentables</p>
                 <p className="mt-5">Des pubs optimisées pour attirer des acheteurs, pas des curieux.Plus de ventes, moins de budget gaspillé. Chaque euro investi génère 3€ de chiffre d&apos;affaires.</p>
@@ -453,19 +448,19 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Résultats génériques et peu personnalisés.</p>
+                    <p className="w-full">Stratégies génériques qui ne tiennent pas compte de votre marché.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Pas de stratégie ni accompagnement humain.</p>
+                    <p className="w-full">Résultats aléatoires, manque de cohérence dans l’image de marque.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Aucune garantie de performance ou de suivi.</p>
+                    <p className="w-full">Mauvaise qualité, manque de confiance des clients et vous serez deuxième par rapport à vos concurrents.</p>
                   </div>
                 </div>
               </div>
@@ -476,19 +471,19 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Délais parfois longs et imprévisibles.</p>
+                    <p className="w-full">Services souvent fragmentés (social media d’un côté, e-commerce de l’autre).</p>
                   </div>
                   <div className="flex  gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Coûts élevés sans forcément un vrai retour sur investissement.</p>
+                    <p className="w-full">Manque de vision stratégique globale → vous perdez en cohérence et en performance.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.4% 0.191 22.216)" className="bi bi-x-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
                     </svg>
-                    <p className="w-full">Peu ou pas de suivi après la livraison.</p>
+                    <p className="w-full">Délais longs, communication peu fluide et résultats inégaux.</p>
                   </div>
                 </div>
               </div>
@@ -499,19 +494,19 @@ export default function Home() {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p className="w-full">Une équipe souriante et dynamique autour d’un ordinateur.</p>
+                    <p className="w-full">Une stratégie créative et sur-mesure, qui relie votre image de marque, vos réseaux sociaux et votre e-commerce.</p>
                   </div>
                   <div className="flex items-start gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p className="w-full">Une fusée qui décolle (symbole de croissance et de lancement réussi).</p>
+                    <p className="w-full">Des marques conçues pour vendre, pas seulement pour exister.</p>
                   </div>
                   <div className="flex items-start  gap-2.5 mt-3.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="oklch(70.7% 0.165 254.624)" className="bi bi-check-circle-fill" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                     </svg>
-                    <p className="w-full">Des icônes modernes représentant accompagnement, optimisation et innovation (SEO, sécurité, graphisme).</p>
+                    <p className="w-full">Un accompagnement humain + la puissance des outils digitaux, pour vous donner un avantage réel sur vos concurrents.</p>
                   </div>
                 </div>
               </div>

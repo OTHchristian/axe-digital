@@ -1,11 +1,18 @@
 'use client'
+
+import Image from "next/image"
+
 export default function NavBar(){
     return (
-        <nav className="h-[70px] w-full xl:w-3/4 sticky top-0  md:top-1.5 z-40 md:py-3 max-w-landing-width mx-auto  flex justify-between items-center md:rounded-full border-b md:border border-[rgba(0,0,0,0.2)] xl:p-4 p-2 pl-4 backdrop-blur-md bg-white/80">
-            <ul className="w-2/3 xl:w-1/3">
-                <li className="font-semibold text-2xl text-black"><span className="text-blue-500 ">Axe</span> Digital</li>
+        <nav className="h-[70px] w-full xl:w-3/4 sticky top-0  md:top-1.5 z-40 md:py-3 max-w-landing-width mx-auto  flex justify-between items-center md:rounded-full border-b md:border border-[rgba(0,0,0,0.2)]  p-2 pl-4 backdrop-blur-md bg-white/80">
+            <ul className="w-full xl:w-1/3">
+                <li className="font-semibold text-2xl text-black flex items-center">
+                    <div className="h-15 w-15 flex items-center justify-center overflow-hidden">
+                        <Image src={'/logo.png'} alt="logo" width={80} height={80}></Image>
+                    </div>
+                    <span className="text-blue-500">Axe</span> Digital</li>
             </ul>
-            <ul className="hidden w-2/3 xl:flex flex-row items-center justify-between">
+            <ul className="hidden w-full xl:flex flex-row items-center gap-5 justify-end">
                 <li><a href="#portfolio" className="hover:text-blue-500 text-black">Portfolio</a></li>
                 <li><a href="#solutions" className="hover:text-blue-500 text-black">Nos solutions</a></li>
                 <li><a href="#pricing" className="hover:text-blue-500 text-black">Nos prix</a></li>
