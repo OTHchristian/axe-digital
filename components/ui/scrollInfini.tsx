@@ -10,12 +10,11 @@ interface ScrollInfiniProps {
 export default function ScrollInfini({ children, speed = 0.5 }: ScrollInfiniProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  let raf: number;
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
     const content = contentRef.current;
-
     if (!container || !content) return;
 
     // Clone pour l’effet infini
@@ -23,20 +22,34 @@ export default function ScrollInfini({ children, speed = 0.5 }: ScrollInfiniProp
     container.appendChild(clone);
 
     const step = () => {
+      if (!container || !content) return;
+
       container.scrollLeft += speed;
       if (container.scrollLeft >= content.scrollWidth) {
         container.scrollLeft -= content.scrollWidth; // reset fluide
       }
-      raf = requestAnimationFrame(step);
+      rafRef.current = requestAnimationFrame(step);
     };
 
-    raf = requestAnimationFrame(step);
+    // Lancer l’animation
+    rafRef.current = requestAnimationFrame(step);
 
     // Pause au hover
-    container.addEventListener("mouseenter", () => cancelAnimationFrame(raf));
-    container.addEventListener("mouseleave", () => (raf = requestAnimationFrame(step)));
+    const pause = () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+    const resume = () => {
+      rafRef.current = requestAnimationFrame(step);
+    };
 
-    return () => cancelAnimationFrame(raf);
+    container.addEventListener("mouseenter", pause);
+    container.addEventListener("mouseleave", resume);
+
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      container.removeEventListener("mouseenter", pause);
+      container.removeEventListener("mouseleave", resume);
+    };
   }, [speed]);
 
   return (

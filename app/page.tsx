@@ -18,8 +18,8 @@ export default function Home() {
         <section className="w-full xl:p-5 h-[calc(100vh-70px)] flex items-center" id="hero-section">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
             <div className="rounded-xl text-black p-5 xl:p-10">
-              <h1 className="text-3xl text-center md:text-5xl font-semibold">Agence de scale pour</h1>
-              <h1 className="text-3xl text-center md:text-5xl font-semibold"> les <span className="text-blue-500">e-commerces</span> et les marques</h1>
+              <h1 className="text-3xl text-center md:text-5xl font-semibold">Accelerateur Xponentiel </h1>
+              <h1 className="text-3xl text-center md:text-5xl font-semibold"> d&apos;<span className="text-blue-500">e-commerces</span> et des marques</h1>
               <p className="mt-10">De la création à l&apos;optimisation, nous propulsons votre e-commerce avec des stratégies éprouvées qui génèrent des résultats mesurables dès les premiers mois.</p>
               <div>
                 <div className="flex items-center gap-2.5 mt-3.5">
@@ -63,9 +63,9 @@ export default function Home() {
               </div>
             </div>
             <div className="rounded-xl overflow-hidden relative">
-              <Image src={"/h2.webp"} width={500} height={0} alt="h1" className="w-full absolute transform rotate-45"></Image>
-              <Image src={"/h1.png"} width={500} height={0} alt="h2" className="w-full absolute transform rotate-45 mt-100 top-0"></Image>
-              {/* <Image src={"/h3.png"} width={1000} height={100} alt="h3" className="w-full h-full"></Image> */}
+              {/* <Image src={"/h2.webp"} width={500} height={0} alt="h1" className="w-full absolute transform rotate-45"></Image> */}
+              {/* <Image src={"/h1.png"} width={500} height={0} alt="h2" className="w-full absolute transform rotate-45 mt-100 top-0"></Image> */}
+              <Image src={"/h3.png"} width={1000} height={100} alt="h3" className="w-full h-full absolute transform"></Image>
             </div>
           </div>
         </section>
@@ -81,25 +81,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 xl:gap-5 mt-3.5 xl:mt-20">
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl flex items-center justify-center">+<Compteur valeurFinale={28}></Compteur></h1>
+                  <h1 className="font-semibold text-5xl text-blue-500 flex items-center justify-center">+<Compteur valeurFinale={28}></Compteur></h1>
                   <p className="text-gray-500 ">Clients actifs dans nos packs.</p>
                 </div>
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl flex items-center justify-center">+<Compteur valeurFinale={180}></Compteur></h1>
+                  <h1 className="font-semibold text-5xl text-blue-500 flex items-center justify-center">+<Compteur valeurFinale={180}></Compteur></h1>
                   <p className="text-gray-500">Augmentation moyenne des ventes.</p>
                 </div> 
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl flex items-center justify-center"><Compteur valeurFinale={97}></Compteur>%</h1>
+                  <h1 className="font-semibold text-5xl text-blue-500 flex items-center justify-center"><Compteur valeurFinale={97}></Compteur>%</h1>
                   <p className="text-gray-500">Taux de satisfaction.</p>
                 </div>
             </div>
             <div className="border border-gray-200 rounded-xl p-10">
                 <div className="text-center">
-                  <h1 className="font-semibold text-5xl flex items-center justify-center"><Compteur valeurFinale={48}></Compteur>Jrs</h1>
+                  <h1 className="font-semibold text-5xl text-blue-500 flex items-center justify-center"><Compteur valeurFinale={48}></Compteur>Jrs</h1>
                   <p className="text-gray-500">Durée de livraison moyenne.</p>
                 </div>
             </div>
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
-                  <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
+                  <div className="rounded-full h-15 w-15 bg-blue-500 flex items-center justify-center">
                     <h1 className="text-2xl text-white">1</h1>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
-                  <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
+                  <div className="rounded-full h-15 w-15 bg-blue-500 flex items-center justify-center">
                     <h1 className="text-2xl text-white">2</h1>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
-                  <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
+                  <div className="rounded-full h-15 w-15 bg-blue-500 flex items-center justify-center">
                     <h1 className="text-2xl text-white">3</h1>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function Home() {
               </div>
               <div className="relative flex items-center justify-center mt-5 ">
                 <div className="absolute h-30 w-30 rounded-full bg-white flex items-center justify-center">
-                  <div className="rounded-full h-15 w-15 bg-black flex items-center justify-center">
+                  <div className="rounded-full h-15 w-15 bg-blue-500 flex items-center justify-center">
                     <h1 className="text-2xl text-white">4</h1>
                   </div>
                 </div>
@@ -206,27 +206,27 @@ export default function Home() {
             <p className="text-gray-500">Chaque service est conçu pour résoudre un problème spécifique et générer des résultats mesurables</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3.5 mt-10">
-            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
+            <div className="rounded-xl border border-blue-500 p-5 flex items-center">
               <div className="text-center">
-                <p className="text-2xl font-semibold">1.Création & Optimisation Shopify</p>
+                <p className="text-2xl font-semibold text-blue-500">1.Création & Optimisation Shopify</p>
                 <p className="mt-5">Une boutique claire, rapide et prête à vendre.Plus de crédibilité et de conversions dès la première visite. Transformation complète de votre image de marque.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
+            <div className="rounded-xl border border-blue-500 p-5 flex items-center">
               <div className="text-center">
-                <p className="text-2xl font-semibold">2.Création de visuels Publicitaires Performants</p>
+                <p className="text-2xl font-semibold text-blue-500">2.Création de visuels Publicitaires Performants</p>
                 <p className="mt-5">Des contenus qui captent l&apos;attention et stoppent le scroll.CTR plus élevé → baisse du coût par clic et plus de conversions. ROI publicitaire multiplié par 2.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
+            <div className="rounded-xl border border-blue-500 p-5 flex items-center">
               <div className="text-center">
-                <p className="text-2xl font-semibold">3.Fiches Produits Optimisées</p>
+                <p className="text-2xl font-semibold text-blue-500">3.Fiches Produits Optimisées</p>
                 <p className="mt-5">Des fiches qui donnent envie d&apos;acheter et se classent sur Google.Plus de visibilité et taux de conversion plus élevé. Vos produits deviennent irrésistibles.</p>
               </div>
             </div>
-            <div className="h-100 rounded-xl border border-gray-200 p-5 flex items-center">
+            <div className="rounded-xl border border-blue-500 p-5 flex items-center">
               <div className="text-center">
-                <p className="text-2xl font-semibold">4.Campagnes Publicitaires Rentables</p>
+                <p className="text-2xl font-semibold text-blue-500">4.Campagnes Publicitaires Rentables</p>
                 <p className="mt-5">Des pubs optimisées pour attirer des acheteurs, pas des curieux.Plus de ventes, moins de budget gaspillé. Chaque euro investi génère 3€ de chiffre d&apos;affaires.</p>
               </div>
             </div>
